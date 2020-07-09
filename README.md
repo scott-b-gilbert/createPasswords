@@ -1,4 +1,5 @@
 # createPasswords
+
 A script to create a slightly stronger "words" password than 1Password (or XKCD-password-generator).
 The script, without any arguments, will return around an 18 character password with the following attributes:
 
@@ -7,6 +8,10 @@ The script, without any arguments, will return around an 18 character password w
 2. words separated with dashes
 3. one random letter capitalized
 4. one random letter replaced with a number
+
+#Requirements
+
+clone and install (XKCD-password-generator)[https://github.com/redacted/XKCD-password-generator]
 
 #TODO
 1. allow different separator
