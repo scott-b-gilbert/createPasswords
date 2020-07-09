@@ -11,7 +11,7 @@ The script, without any arguments, will return around an 18 character password w
 
 #Requirements
 
-clone and install (XKCD-password-generator)[https://github.com/redacted/XKCD-password-generator]
+clone and install [XKCD-password-generator](https://github.com/redacted/XKCD-password-generator)
 
 #TODO
 1. allow different separator
