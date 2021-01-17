@@ -1,13 +1,20 @@
 #!/bin/python3
-
+import sys
 from random import randint
 from xkcdpass import xkcd_password as xp
 
 wordfile = xp.locate_wordfile()
 mywords = xp.generate_wordlist( wordfile = wordfile, min_length=5, max_length=6, valid_chars='.')
-
-password = xp.generate_xkcdpassword( mywords, numwords=4, delimiter='-' )
-
+password = ''
+tries=500
+minWords=6
+while (len(password) == 0) or (len(password) > int(sys.argv[1])): 
+    if tries == 0:
+        minWords = minWords - 1
+        tries=500
+    password = xp.generate_xkcdpassword( mywords, numwords=minWords, delimiter='-' )
+    tries = tries - 1
+    print("{}".format(len(password)))
 index1 = -1
 index2 = -1
 # create and replace capital letter
