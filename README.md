@@ -9,11 +9,11 @@ The script, without any arguments, will return around an 18 character password w
 3. one random letter capitalized
 4. one random letter replaced with a number
 
-#Requirements
+## Requirements
 
 clone and install [XKCD-password-generator](https://github.com/redacted/XKCD-password-generator)
 
-#TODO
+### TODO
 1. allow different separator
 2. allow more letters capitalized
 3. allow more number replacement
